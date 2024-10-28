@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feature Preserving Surface Reconstruction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Feature Preserving Surface Reconstruction</h1>
+    <p><strong>Author:</strong> Sherry Robinson</p>
+    <h2>Description</h2>
+    <p><strong>Introduction to surface reconstruction methods and objectives.</strong></p>
+    <p>
+        Surface reconstruction is a challenging open problem in the field of computational geometry.
+        Given a sufficiently dense sample of points, a reconstruction of the surface homeomorphic
+        to the original has been accomplished for smooth surfaces. However, this problem remains
+        open for surfaces with sharp edges or corners. This project will involve researching
+        existing methods of smooth and non-smooth surface reconstruction and investigating methods
+        of ensuring a reconstruction of a surface with sharp edges/corners is homeomorphic to the
+        original. This problem has applications in 3D scanning of objects to make accurate virtual
+        models which is relevant to many fields including robotic navigation and manipulation of
+        objects, computer graphics, virtual models, etc. The end result of this project will be a
+        paper describing the results of the research and investigation.
+    </p>
+
+    <h2>Deeper Dive</h2>
+    <h3>Geometry vs Topology</h3>
+    <p>TODO</p>
+    <h3>Mesh vs Interpolation vs Piecewise</h3>
+    <p>TODO</p>
+    <h4>3D Delaunay Triangulation</h4>
+    <p>TODO</p>
+    <h4>Moving Least-Squares</h4>
+    <p>TODO</p>
+
+    <h3>Relevant Calculations</h3>
+    <h4>λ0</h4>
+    <p>TODO</p>
+    <h4>λ1</h4>
+    <p>TODO</p>
+    <h4>λ2</h4>
+    <p>TODO</p>
+    <h4>Estimating Surface Normals</h4>
+    <p>TODO</p>
+
+    <h2>Feature Detection/Preservation</h2>
+    <p>TODO</p>
+
+    <h2>Compare Surface Reconstruction Techniques</h2>
+    <div id="interactive-window"></div>
+    <div id="dropdown-menu"></div>
+
+    <h2>Timeline</h2>
+    <ul>
+        <li>Week 5: Begin research - find resources</li>
+        <li>Week 6: Continue research, begin brainstorming</li>
+        <li>Week 7: Experiment with different algorithms, find test datasets</li>
+        <li>Week 8: Write pseudo-code of algorithm/draft any proofs</li>
+        <li>Week 9: Implement and test algorithms on test datasets/make note for refinement</li>
+        <li>Week 10: Write outline of paper, consolidate resources, make sure website is up to date</li>
+        <li>Week 11: Write first draft of paper, continue working with algorithms as needed</li>
+        <li>Week 12: Finalize documentation of results and add to paper, add visuals generated from implementation, revise the paper</li>
+        <li>Week 13: Revise the paper and create/practice presentation</li>
+        <li>Week 14: Present results to the class</li>
+    </ul>
+    <h2>Week 6 Presentation Slides</h2>
+    <p>
+        View the <a href="https://docs.google.com/presentation/d/16QK4ej7VdbTBpYSFDUaRHD6gbN7BOk4tmdqSaEUYYac/edit#slide=id.p" target="_blank">Week 6 Presentation Slides</a> on Google Slides.
+    </p>
+    <h2>Resources</h2>
+    <ul>
+    <li><a href="https://inria.hal.science/hal-01348404/document" target="_blank">A Survey of Surface Reconstruction from Point Clouds</a></li>
+    <li><a href="https://www.cs.ucdavis.edu/~amenta/pubs/simple.pdf" target="_blank">A Simple Algorithm for Homeomorphic Surface Reconstruction</a></li>
+
+    <li><a href="https://www.sci.utah.edu/~shachar/Publications/rmls.pdf" target="_blank">Robust Moving Least-squares Fitting with Sharp Features</a></li>
+    <li><a href="https://www.cs.tau.ac.il/~dcor/articles/2010/L1-Sparse.pdf" target="_blank">Lambda_1-Sparse Reconstruction of Sharp Point Set Surfaces</a></li>
+    <li><a href="https://inria.hal.science/inria-00354969/PDF/RIMLS_eg09.pdf" target="_blank">Feature Preserving Point Set Surfaces based on Non-Linear Kernel Regression</a></li>
+    <li><a href="https://www.cs.tau.ac.il/~dcor/articles/2007/Parameterization-free-Projection.pdf" target="_blank">Parameterization-free Projection for Geometry Reconstruction</a></li>
+    <li><a href="https://www.cs.tau.ac.il/~dcor/articles/2007/Data-Dependent-MLS.pdf" target="_blank">Data-Dependent MLS for Faithful Surface Approximation</a></li>
+    <li><a href="https://www.cs.purdue.edu/homes/tamaldey/course/531/Delaunay%283D%29.pdf" target="_blank">Three-dimensional Delaunay triangulations</a></li>
+
+    <p>Potential Sources:</p>
+    <li><a href="https://www.cs.ubc.ca/~ascher/papers/hwgcaz.pdf" target="_blank">Edge-Aware Point Set Resampling</a></li>
+    <li><a href="https://pages.saclay.inria.fr/mathieu.desbrun/pubs/DCAGD13.pdf" target="_blank">Feature-Preserving Surface Reconstruction and Simplification from Defect-Laden Point Sets</a></li>
+    <li><a href="http://staff.ustc.edu.cn/~juyong/Papers/Xiong.Reconstruction.2014.pdf" target="_blank">Robust Surface Reconstruction via Dictionary Learning</a></li>
+    <li><a href="https://www.cs.jhu.edu/~misha/MyPapers/SGP05.pdf" target="_blank">Reconstruction of Solid Models from Oriented Point Sets</a></li>
+    <li><a href="http://josiahmanson.com/research/wavelet_reconstruct/wavelet_reconstruct.pdf" target="_blank">Streaming Surface Reconstruction Using Wavelets</a></li>
+    <li><a href="https://gdmc.nl/publications/2007/Computing_3D_Voronoi_Diagram.pdf" target="_blank">Computing the 3D Voronoi Diagram Robustly</a></li>
+    <li><a href="https://graphics.pixar.com/library/Reconstruction/paper.pdf" target="_blank">Surface Reconstruction from Unorganized Points</a></li>
+
+    </ul>
+
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="scripts/three.js"></script> <!-- Three.js library for WebGL -->
+    <script src="src/App.js"></script> <!-- Entry point for the React app -->
+</body>
+</html>
